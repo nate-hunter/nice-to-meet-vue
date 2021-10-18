@@ -1,6 +1,7 @@
 <template>
     <div class="section">
-        <h2>Home...</h2>
+        <h2>Off The Record</h2>
+        <p>Talk amongst yourselves...</p>
 
         <User>
             <template v-slot:user="{ user }">
@@ -12,8 +13,7 @@
             </template>
         </User>
 
-
-        
+       
     </div>
 </template>
 

@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <header>
-      <h1>Vue Voxer (Demo)</h1>
-      <p>Realtime Voice Chat</p>
+      <h2>Off The Record</h2>
+        <p>Talk amongst yourselves...</p>
+
+        <img src="https://cdn.fedweb.org/fed-28/2/Linda-Richman-562px.jpg" alt="snl" style="height: 200px">
     </header>
 
     <router-view></router-view>
