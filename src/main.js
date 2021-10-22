@@ -2,6 +2,7 @@ import Vue from 'vue';
 import { firestorePlugin } from 'vuefire';
 import VueRouter from 'vue-router';
 import VueCompositionApi from '@vue/composition-api';
+import '@fortawesome/fontawesome-free/js/all';
 
 import App from './App.vue';
 import Home from './components/Home';

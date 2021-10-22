@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <header>
-      <h2>Off The Record</h2>
-        <p>Talk amongst yourselves...</p>
-
-        <img src="https://cdn.fedweb.org/fed-28/2/Linda-Richman-562px.jpg" alt="snl" style="height: 200px">
-    </header>
+    <!-- <TheNavbar /> -->
+      <!-- <header>
+        <div class="header-container">
+            <span class="logo">Off The Record</span>
+            <span class="user-logged-in">User Name</span>
+        </div>
+      </header> -->
 
     <router-view></router-view>
   </div>
@@ -14,16 +15,33 @@
 <script>
 import {auth} from './firebase';
 
-
 console.log('auth:', auth)
 
 export default {
   name: 'App',
-  components: {
-  }
+
 }
 </script>
 
 <style>
+/* .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:slateblue;
+  height: 55px;
+}
 
+.logo {
+  margin-left: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.user-logged-in {
+  color: #f99595;
+  font-weight: bolder;
+  margin-right: 10px;
+} */
 </style>

@@ -1,6 +1,8 @@
 <template>
     <main class="section">
-        <h3>Welcome to ChatRoom: {{ chatId }}</h3>
+        <h3>Welcome to ChatRoom: <span class="chatroom-name">{{ chatId }}</span></h3>
+
+        <p>Enter a text message or record an audio message below.</p>
 
         <User>
             <template v-slot:user="{ user }">
@@ -14,11 +16,10 @@
                         </li>
                     </ul>
 
-                    <input v-model="newMessageText" class="input">
+                    <input v-model="newMessageText" class="input" placeholder="Enter Msg Text...">
 
-                    <h5>Recorded Audio</h5>
-
-
+                    <!-- <h5>Recorded Audio</h5> -->
+                    <br />
                     <br />
                     <button v-if="!recorder" @click="record()" class="button is-info">Record Voice</button>
                     <button v-else @click="stop()" class="button is-danger">Stop</button>
@@ -34,14 +35,11 @@
                     >
                         Send
                     </button>
-
-
-
                 </div>
                 <Login v-else />
             </template>
         </User>
-
+        <br />
         <router-link to="/">Back</router-link>
     </main>
 </template>
@@ -147,6 +145,10 @@ export default {
 </script>
 
 <style scoped>
+.chatroom-name {
+    color: slateblue;
+}
+
 ul {
     list-style: none;
     margin: 0;
